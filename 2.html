@@ -5,44 +5,15 @@
     <!-- title -->
     <title>MacBook Pro</title>
     <meta charset="utf-8">
-    <style>
-        body {
-            margin: 0;
-        }
-        
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        h1 {
-            font-size: 45px;
-            text-align: center;
-            border-bottom: 1px solid gray;
-            margin: 0;
-            padding: 30px;
-        }
-        
-        #grid {
-            display: grid;
-            grid-template-columns: 150px 1fr;
-        }
-        
-        #grid ol {
-            border-right: 1px solid gray;
-            width: 100px;
-            margin: 0;
-            padding: 20px;
-            padding-left: 33px;
-        }
-        
-        #grid #article {
-            padding-left: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="color.js"></script>
 </head>
 
 <body>
+    <input id="night_day" type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
+
     <h1><a href="index.html">Apple MacBook</a></h1>
     <div id="grid">
         <ol>
@@ -52,9 +23,7 @@
         </ol>
 
         <div id="article">
-
             <h2>MacBook Air</h2>
-
             <p><a target="_blank" href="http://www.naver.com">Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local
                 storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
             <img width="100%" src="https://www.apple.com/v/macbook-air/f/images/meta/og__wmayxefn276q.png?202005112345">
